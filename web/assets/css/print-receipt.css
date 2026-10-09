@@ -1,0 +1,124 @@
+/* ====================================================================
+   ANNPATH — PRINT-READY DIGITAL RESCUE RECEIPT STYLESHEET
+   ==================================================================== */
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar, .footer, .btn, .no-print {
+    display: none !important;
+  }
+
+  .receipt-container {
+    box-shadow: none !important;
+    border: 2px solid #333333 !important;
+    padding: 2.5cm !important;
+    margin: 0 !important;
+    width: 100% !important;
+    page-break-after: avoid;
+  }
+}
+
+.receipt-container {
+  max-width: 820px;
+  margin: 3rem auto;
+  background: #ffffff;
+  border: 1px solid #dcd8cf;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  font-family: 'Inter', sans-serif;
+}
+
+.receipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #176B4D;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.receipt-header .logo-area h2 {
+  color: #176B4D;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.receipt-header .receipt-meta {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.receipt-header .receipt-num {
+  font-weight: 700;
+  color: #252525;
+  font-size: 1.1rem;
+}
+
+.receipt-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.receipt-block h4 {
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #176B4D;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.receipt-block p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2.5rem;
+}
+
+.receipt-table th {
+  background: #f8f6f0;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.receipt-table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.receipt-verification {
+  background: #f8fbf9;
+  border: 1px dashed #176B4D;
+  border-radius: 8px;
+  padding: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.receipt-verification code {
+  font-family: monospace;
+  font-size: 0.8rem;
+  word-break: break-all;
+  color: #333;
+}

@@ -1,0 +1,22 @@
+# NetBeans build outputs
+build/
+dist/
+nbproject/private/
+
+# Compiled classes and archives
+*.class
+*.war
+*.zip
+
+# IDE specific files
+.idea/
+*.iml
+.vscode/
+
+# Logs and OS files
+*.log
+Thumbs.db
+.DS_Store
+
+# Scratch and temp files
+scratch/
